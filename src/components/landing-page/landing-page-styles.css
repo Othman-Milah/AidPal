@@ -1,0 +1,219 @@
+/* This file is where css selectors for the component go.
+   There will be hard coded properties and properties controlled by variables, for example
+
+   landing-page .landing-page-value-text {
+   color: var(--landing-page-value-text-color);
+   display: inline-block;
+	 }
+*/
+
+landing-page:not(.oj-complete) {
+  visibility: hidden;
+}
+
+landing-page {
+  min-height: 50px;
+  width: 50px;
+}
+
+landing-page[hidden] {
+  display: none;
+}
+
+/* .hero__contect__form {
+  display: flex;
+} */
+
+/* Style for hero banner */
+.hero__banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.hero__content {
+  max-width: 500px;
+  margin-left: 5%;
+  z-index: 1;
+}
+
+.hero__content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero__content p {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: rgb(184, 175, 175);
+}
+
+.hero__content__form {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.hero__content__form #text-email-input {
+  width: 60%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  outline: none;
+}
+
+.hero__content__form #emailbutton {
+  padding: 10px 20px;
+  /* background-color: #ffcd1e; */
+  /* color: #222; */
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  /* border-radius: 0 5px 5px 0; */
+  cursor: pointer;
+  transition: all 0.2s ease;
+  height: 3.27rem;
+}
+
+.hero__content__form #emailbutton:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.hero__content__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 768px) {
+  .hero__banner {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+
+  .hero__content {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .hero__content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .hero__content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .hero__content__form {
+    flex-direction: column;
+  }
+
+  .hero__content__form #text-email-input {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  .hero__content__form #emailbutton {
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Sign Up Section Css */
+
+.signup__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.signup__container__calltoaction {
+  height: 40vh;
+  width: 380px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+/* Import the poppings font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
+
+/* Set the font family for an element */
+
+.signup__container__calltoaction h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.signup__container__calltoaction p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.signup__container__image {
+  height: 40vh;
+  width: 380px;
+  flex-grow: 1;
+}
+
+.demo-card-content {
+  width: 25rem;
+  height: 15rem;
+  padding: 2rem;
+}
+
+.signup__container__image {
+  overflow: hidden;
+}
+
+.signup__container__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* slide out panel */
+#slide-out-container {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 60vw;
+  height: 100%;
+  background-color: white;
+  transition: all 0.3s ease-out;
+  overflow-y: scroll;
+}
+
+#slide-out-container.show {
+  right: 0;
+}
+
+.signup__label {
+  font-family: "Poppins", sans-serif;
+}
+
+/* .oj-label-group {
+    margin: 1rem;
+  } */
+
+.form__layout__buttons {
+  display: flex;
+}
