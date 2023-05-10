@@ -14,7 +14,7 @@ const DonorItem = () => {
             <h1 class="animate slide-left pop delay-4">Donor Name</h1>
             <p
               class="animate slide-left pop delay-5"
-              style="color: white; margin-bottom: 2.5rem;"
+              style="color: black; margin-bottom: 2.5rem;"
             >
               Package name
             </p>

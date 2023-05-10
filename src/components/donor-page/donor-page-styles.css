@@ -38,15 +38,16 @@ donor-page[hidden] {
 }
 
 .donor__donation__info__packages {
+  margin-top: 15px;
   height: 60vh;
   width: 30vw;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .donor__donation__info__items {
   height: 60vh;
   width: 70vw;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 /* Table style */
@@ -63,6 +64,11 @@ donor-page[hidden] {
 
 .demo-ver-button {
   width: 100%;
+}
+
+.demo-full-height {
+  height: 10rem;
+  width: 25vw;
 }
 /* end of packages style */
 
@@ -133,7 +139,7 @@ p {
   width: 100%;
   height: 100%;
   padding: 1rem 0.75rem;
-  background: lightgray;
+  /* background: lightgray; */
   transition: 0.4s ease-in-out;
   z-index: 1;
 }
@@ -147,9 +153,9 @@ p {
   border: 3px solid;
   border-image: linear-gradient(
       to bottom,
-      #aea724 5%,
-      forestgreen 35% 65%,
-      #aea724 95%
+      #1e1e13 5%,
+      rgb(210, 212, 210) 35% 65%,
+      #1e1e13 95%
     )
     0 0 0 100%;
   transition: 0.3s ease-in-out 0.2s;
@@ -159,9 +165,10 @@ p {
   position: absolute;
   top: 0;
   right: 0;
-  width: 60vmin;
+  /* width: 60vmin; */
+  width: 100%;
   height: 100%;
-  background-image: url("https://assets.codepen.io/4787486/trees.png");
+  background-image: url("https://objectstorage.eu-madrid-1.oraclecloud.com/p/VahhCM3h6hfK5bsrsr1Y_oURuYzd460m0XoNZk7aspsquE0HnGN3FBClM4Jqoez_/n/ax3ymupp8kgr/b/GCN_Bucket/o/BenDonVolpattern-gb08752b1e_1920.jpg");
   background-size: cover;
   transition: 0.3s ease-in-out;
   /* border: 1px solid green; */
@@ -182,7 +189,7 @@ p {
 .dot {
   width: 14px;
   height: 14px;
-  background: yellow;
+  background: indigo;
   border: 1px solid indigo;
   border-radius: 50%;
   transition: 0.3s ease-in-out 0.3s;
@@ -308,3 +315,18 @@ p {
   animation-delay: 2.4s;
 }
 /* end item style */
+
+@media (max-width: 768px) {
+  .donor__donation__info {
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+  }
+
+  .donor__donation__info__packages {
+    margin-top: 15px;
+    height: 60vh;
+    width: auto;
+    /* background-color: aqua; */
+  }
+}
