@@ -15,7 +15,7 @@ const HeroBanner = () => {
   const sendEmailTo = (e: CustomEvent): void => {
     e.preventDefault();
 
-    fetch("http://localhost:8080/email/basic", {
+    fetch("http://143.47.59.22:8080/email/basic", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -57,7 +57,11 @@ const HeroBanner = () => {
             }}
           ></oj-input-text>
           {/* <button type="submit">Sign up</button> */}
-          <oj-button id="emailbutton" onojAction={sendEmailTo}>
+          <oj-button
+            id="emailbutton"
+            onojAction={sendEmailTo}
+            style={{ height: "4.4rem" }}
+          >
             <span slot="endIcon" class="oj-ux-ico-email"></span>
             Send
           </oj-button>

@@ -39,7 +39,7 @@ const SignUpForm = ({ userType }: Props) => {
       username: username,
     };
 
-    fetch("http://localhost:8080/donors", {
+    fetch("http://143.47.59.22:8080/donors", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -54,6 +54,7 @@ const SignUpForm = ({ userType }: Props) => {
       })
       .then((data) => {
         console.log("Success:", data);
+        alert("Donor user created!");
         // Handle successful response here
       })
       .catch((error) => {
