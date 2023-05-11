@@ -63,7 +63,7 @@ export const App = registerCustomElement(
       alert("checking for username " + username);
       let found = false;
       try {
-        const response = await fetch("http://localhost:8080/donors/list");
+        const response = await fetch("http://143.47.59.22:8080/donors/list");
         const data = await response.json();
         data.forEach((userInfo: User) => {
           if (
